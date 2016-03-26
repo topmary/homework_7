@@ -5,10 +5,23 @@
 body {
   margin: 0;
 }
+
+body .menu-items li {
+  display: inline-block;
+}
+
+body .menu-items li a {
+  text-decoration: none;
+}
 body header span,
 body .menu span,
+body .portfolio span,
 body header a,
-body .menu a {
+body .menu a,
+body .portfolio a,
+body header h2,
+body .menu h2,
+body .portfolio h2 {
   font-family: BebasBold, serif;
   color: white;
 }
@@ -68,51 +81,56 @@ body header .image div span:last-child {
 }
 body .menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 81px;
   background-color: #262223;
 }
 body .menu span {
   font-size: 40px;
-  margin-left: 288px;
+  margin-left: 30px;
   margin-top: 25px;
-  display: inline-block;
+  text-align: center;
+  margin-bottom: 16px;
 }
-
 body .menu .menu-items {
   margin-left: 18.7%;
   padding-top: 19px;
 }
 
+body .menu .menu-items a {
+  padding: 0 4px 8px 4px;
+}
 body .menu .menu-items a:hover {
   padding-bottom: 8px;
   color: #62bc98;
   border-bottom: 1px solid #62bc98;
 }
 
-body .menu .menu-items a,
-body .menu .social a {
-  text-decoration: none;
-  padding: 0 4px 8px 4px;
+@media (max-width: 540px) {
+  body .menu .menu-items {
+    margin-left: 45px;
+  }
 }
-
 body .menu .menu-items li,
 body .menu .social li {
-  display: inline-block;
   margin-right: 10.5px;
   letter-spacing: -0.02em;
 }
-
 body .menu .menu-items li:last-child,
 body .menu .social li:last-child {
   margin-left: 2px;
 }
-
 body .menu .social {
   margin-left: 8px;
   padding-top: 15px;
 }
 
+@media (max-width: 540px) {
+  body .menu .social {
+    margin-left: -25px;
+  }
+}
 body .menu .social li {
   background-color: white;
   border-radius: 23px;
@@ -120,27 +138,52 @@ body .menu .social li {
   height: 26px;
   margin-right: 9px;
 }
-
 body .menu .social li:hover {
   background-color: #62bc98;
 }
-
 body .menu .social li a {
   position: relative;
   top: 3px;
   left: 1px;
 }
-
 body .menu .social li a i {
   -webkit-filter: invert(100%);
   filter: invert(100%);
   font-size: 1.2em;
 }
-
 body .menu .social li.facebook a {
   left: 3px;
 }
-
 body .menu .social li.google-plus a {
   left: -2px;
+}
+
+body .portfolio {
+  background-color: #62bc98;
+}
+
+body .portfolio .title {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+body .portfolio .title h2 {
+  margin: 47px 0 0 0;
+  font-size: 39px;
+}
+
+body .portfolio .menu-items {
+  margin-top: -2px;
+  padding-left: 0;
+}
+
+body .portfolio .menu-items li {
+  font-size: 20px;
+}
+
+body .portfolio .menu-items li a {
+  letter-spacing: 0.0005em;
 }

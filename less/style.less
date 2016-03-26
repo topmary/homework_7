@@ -11,8 +11,16 @@
 body {
   margin: 0;
 
-  header, .menu {
-    span, a {
+  .menu-items li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  header, .menu, .portfolio {
+    span, a, h2 {
       font-family: BebasBold, serif;
       color: white;
     }
@@ -77,35 +85,40 @@ body {
 
   .menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 81px;
     background-color: #262223;
 
     span {
       font-size: 40px;
-      margin-left: 288px;
+      margin-left: 30px;
       margin-top: 25px;
-      display: inline-block;
+      text-align: center;
+      margin-bottom: 16px;
     }
+
     .menu-items {
       margin-left: 18.7%;
       padding-top: 19px;
 
-      a:hover {
-        padding-bottom: 8px;
-        color: @color-green;
-        border-bottom: 1px solid @color-green;
+      a {
+        padding: 0 4px 8px 4px;
+
+        &:hover {
+          padding-bottom: 8px;
+          color: @color-green;
+          border-bottom: 1px solid @color-green;
+        }
+      }
+
+      @media (max-width: @screen-mobile) {
+        margin-left: 45px;
       }
     }
+
     .menu-items, .social {
-
-      a {
-        text-decoration: none;
-        padding: 0 4px 8px 4px;
-      }
-
       li {
-        display: inline-block;
         margin-right: 10.5px;
         letter-spacing: -0.02em;
 
@@ -118,6 +131,10 @@ body {
     .social {
       margin-left: 8px;
       padding-top: 15px;
+
+      @media (max-width: @screen-mobile) {
+        margin-left: -25px;
+      }
 
       li {
         background-color: white;
@@ -148,6 +165,36 @@ body {
 
         &.google-plus a {
           left: -2px
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    background-color: @color-green;
+
+    .title {
+      margin: 0 auto;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        margin: 47px 0 0 0;
+        font-size: 39px;
+      }
+    }
+
+    .menu-items {
+      margin-top: -2px;
+      padding-left: 0;
+
+      li {
+        font-size: 20px;
+
+        a {
+          letter-spacing: 0.0005em;
         }
       }
     }
