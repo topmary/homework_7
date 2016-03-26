@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+body header {
+  width: 100%;
+  padding: 0;
+}
+body header .image {
+  background: url("../img/himg.png") no-repeat;
+  background-size: 101%;
+  background-position: -8px -190px;
+  height: 408px;
+}
