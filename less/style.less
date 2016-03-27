@@ -19,11 +19,9 @@ body {
     }
   }
 
-  header, .menu, .portfolio {
-    span, a, h2 {
-      font-family: BebasBold, serif;
-      color: white;
-    }
+  span, a, h2 {
+    font-family: BebasBold, serif;
+    color: white;
   }
 
   header {
@@ -172,6 +170,7 @@ body {
 
   .portfolio {
     background-color: @color-green;
+    padding-bottom: 84px;
 
     .title {
       margin: 0 auto;
@@ -262,5 +261,44 @@ body {
 
       }
     }
+  }
+
+  .girl {
+    background: url("../img/girl.png") no-repeat;
+    background-position: 0;
+    background-size: 100%;
+    display: flex;
+    height: 245px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      padding-top: 20px;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      text-align: center;
+
+      &:first-child {
+        max-width: 574px;
+        font-size: 30px;
+        padding-top: 5%;
+
+        @media (max-width: @screen-mobile) {
+          font-size: 20px;
+        }
+      }
+
+      &:last-child {
+        padding-left: 36%;
+        font-size: 20px;
+
+        @media (max-width: @screen-mobile) {
+          font-size: 13px;
+        }
+
+      }
+    }
+
   }
 }
