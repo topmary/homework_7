@@ -177,17 +177,60 @@ body .portfolio .menu-items li {
 body .portfolio .menu-items li a {
   letter-spacing: 0.0005em;
 }
-
 body .portfolio table {
   background-color: black;
   margin: 0 auto;
 }
-
 body .portfolio table td {
   max-width: 400px;
+  position: relative;
 }
 
-body .portfolio table td img {
+body .portfolio table td:hover .cover {
+  opacity: 0.5;
+}
+
+body .portfolio table td:hover .menu-items li,
+body .portfolio table td:hover .search {
+  opacity: 1;
+}
+
+body .portfolio table td .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #62bc98;
+  opacity: 0;
+}
+
+body .portfolio table td .search {
+  position: absolute;
+  bottom: 43%;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  opacity: 0;
+  z-index: 10;
+}
+
+body .portfolio table td .menu-items {
+  position: absolute;
+  bottom: 16px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+body .portfolio table td .menu-items li {
+  padding-right: 7%;
+  font-size: 23px;
+  opacity: 0;
+}
+
+body .portfolio table img {
   display: block;
   max-width: 100%;
   height: auto;
