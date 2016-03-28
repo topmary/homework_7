@@ -26,7 +26,6 @@
     margin: 0 auto;
   }
 }
-
 .white-bebas {
   font-family: BebasBold, serif;
   color: white;
@@ -363,7 +362,6 @@ body .news .wrapper .blog {
   width: 43%;
   padding-top: 6px;
 }
-
 @media (max-width: 1024px) {
   body .news .wrapper .blog {
     width: 90%;
@@ -423,15 +421,30 @@ body .news .wrapper .blog .comments .comment .comment-text span {
   font-size: 11px;
 }
 body .brands {
-  padding: 66px 0 66px 0%;
+  padding: 63px 0 55px 0;
   width: 100%;
   text-align: center;
   background-color: #bebebe;
 }
-
 body .brands img {
   height: 28px;
-  margin-right: 5.2%;
+}
+
+body .brands img:nth-child(1) {
+  margin: 0 0 9px 5%;
+}
+
+body .brands img:nth-child(2) {
+  margin: 0 0 8px 5%;
+}
+
+body .brands img:nth-child(3) {
+  height: 41px;
+  margin: 0 3% 0 5%;
+}
+
+body .brands img:nth-child(4) {
+  margin: 0 7% 6px 0;
 }
 body .bio {
   background-color: #e45245;
@@ -451,7 +464,6 @@ body .bio .profile span {
   color: white;
   margin-bottom: 21px;
 }
-
 body .bio .profile div {
   width: 187px;
   height: 187px;
@@ -459,7 +471,6 @@ body .bio .profile div {
   border-radius: 150px;
   margin: 0 auto;
 }
-
 body .bio .profile img {
   margin-top: 35px;
   height: 118px;
@@ -469,7 +480,6 @@ body .bio .profile .social {
   margin-top: 23px;
   margin-left: 0;
 }
-
 body .bio .profile .social li:hover {
   background-color: #FBDE06;
 }
@@ -492,7 +502,6 @@ body .bio .article p {
   font-size: 13px;
   margin-top: 10px;
 }
-
 body .contact {
   background-color: #bebebe;
   background: url("../img/bridge.png") no-repeat;
@@ -501,52 +510,42 @@ body .contact {
   text-align: center;
   padding-bottom: 100px;
 }
-
 @media (max-width: 768px) {
   body .contact {
     background-position: 0 0;
   }
 }
-
 body .contact h2 {
   margin-top: 47px;
 }
-
 body .contact .phone {
   margin: 14px 0 12px 0;
 }
-
 body .contact .phone span {
   font-size: 39px;
 }
-
 body .contact .email {
   margin: 29px 0 0 0;
 }
-
 body .contact .email span {
   border: 3px solid white;
   font-size: 48px;
   letter-spacing: 0.08em;
   padding: 17px 103px 11px 103px;
 }
-
 @media (max-width: 768px) {
   body .contact .email span {
     font-size: 34px;
   }
 }
-
 @media (max-width: 540px) {
   body .contact .email span {
     font-size: 20px;
   }
 }
-
 body .contact .address {
   margin-top: 35px;
 }
-
 body .contact .address span {
   font-size: 24px;
   letter-spacing: 0.02em;
