@@ -5,36 +5,36 @@
 .flex {
   display: flex;
 }
-
 .flex.wrapper {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 770px;
   margin: 0 auto;
 }
-
 @media (max-width: 768px) {
   .flex.wrapper {
     width: 95%;
   }
 }
-
 .flex.wrapper > div {
   width: 50%;
   min-width: 300px;
 }
-
 @media (max-width: 768px) {
   .flex.wrapper > div {
     width: 90%;
     margin: 0 auto;
   }
 }
+
+.white-bebas {
+  font-family: BebasBold, serif;
+  color: white;
+}
 .green-white {
   background-color: #54a585;
   color: white;
 }
-
 .h2-title {
   font-family: BebasBold, serif;
   display: inline-block;
@@ -44,26 +44,21 @@
   color: black;
   margin-top: 62px;
 }
-
 .menu-items li {
   display: inline-block;
 }
-
 .menu-items li a {
   text-decoration: none;
 }
-
 .menu-items.social {
   margin-left: 8px;
   padding-top: 15px;
 }
-
 @media (max-width: 540px) {
   .menu-items.social {
     margin-left: -25px;
   }
 }
-
 .menu-items.social li {
   background-color: white;
   border-radius: 23px;
@@ -71,27 +66,22 @@
   height: 27px;
   margin-right: 9px;
 }
-
 .menu-items.social li a {
   position: relative;
   top: 4px;
   left: 1px;
   padding: 0 4px 8px 4px;
 }
-
 .menu-items.social li a i {
   color: black;
   font-size: 1.2em;
 }
-
 .menu-items.social li.facebook a {
   left: 3px;
 }
-
 .menu-items.social li.google-plus a {
   left: -2px;
 }
-
 body {
   margin: 0;
 }
@@ -177,12 +167,10 @@ body .menu span {
   text-align: center;
   margin-bottom: 16px;
 }
-
 body .menu .navigation {
   margin-left: 18.7%;
   padding-top: 19px;
 }
-
 body .menu .navigation a:hover {
   padding-bottom: 8px;
   color: #62bc98;
@@ -193,18 +181,15 @@ body .menu .navigation a:hover {
     margin-left: 45px;
   }
 }
-
 body .menu .navigation li,
 body .menu .social li {
   margin-right: 9.5px;
   letter-spacing: -0.02em;
 }
-
 body .menu .navigation li:last-child,
 body .menu .social li:last-child {
   margin-left: 2px;
 }
-
 body .menu .navigation li a,
 body .menu .social li a {
   padding: 0 4px 8px 4px;
@@ -332,12 +317,10 @@ body .news .wrapper {
   font-family: 'PT Sans', sans-serif;
   padding-top: 17px;
 }
-
 body .news .wrapper .post .date {
   padding: 3px 12px 1px 19px;
   font-size: 10px;
 }
-
 body .news .wrapper .post .tags {
   float: right;
   font-size: 10px;
@@ -346,40 +329,33 @@ body .news .wrapper .post .tags {
   padding-right: 23px;
   padding-top: 5px;
 }
-
 body .news .wrapper .post .tags i {
   color: #54a585;
   padding-right: 12px;
 }
-
 body .news .wrapper .post .title {
   display: block;
   margin-top: 14px;
   color: #54a585;
 }
-
 body .news .wrapper .post img {
   height: 160px;
   width: 100%;
   margin-top: 10px;
 }
-
 body .news .wrapper .post p {
   margin: 7px 0 0 5px;
   font-size: 14px;
 }
-
 body .news .wrapper .post .read-more {
   float: right;
   margin: 20px 21px 0 0;
 }
-
 body .news .wrapper .post .read-more a {
   font-size: 12px;
   color: #f44832;
   text-decoration: none;
 }
-
 body .news .wrapper .post .read-more i {
   margin-left: 12px;
 }
@@ -388,21 +364,23 @@ body .news .wrapper .blog {
   padding-top: 6px;
 }
 
+@media (max-width: 1024px) {
+  body .news .wrapper .blog {
+    width: 90%;
+  }
+}
 body .news .wrapper .blog .tag span {
   font-family: BebasBold, serif;
   color: #54a585;
 }
-
 body .news .wrapper .blog .tag ul {
   margin: 14px 0 0 4px;
   padding: 0;
 }
-
 body .news .wrapper .blog .tag ul li {
   padding-bottom: 9px;
   min-width: 52px;
 }
-
 body .news .wrapper .blog .tag ul li a {
   background-color: #54a585;
   color: white;
@@ -411,69 +389,61 @@ body .news .wrapper .blog .tag ul li a {
   font-size: 14px;
   text-transform: capitalize;
 }
-
 body .news .wrapper .blog .tag ul li a:hover {
   background-color: #E45245;
 }
-
 body .news .wrapper .blog .comments {
   margin-top: 37px;
 }
-
 body .news .wrapper .blog .comments .from-blog {
   margin-bottom: 5px;
 }
-
 body .news .wrapper .blog .comments .from-blog span:first-child {
   font-style: italic;
   color: gray;
 }
-
 body .news .wrapper .blog .comments .comment {
   margin-bottom: -3px;
 }
-
 body .news .wrapper .blog .comments .comment img {
   width: 60px;
   height: 60px;
 }
-
 body .news .wrapper .blog .comments .comment .comment-text {
   display: inline-block;
   padding-left: 10px;
   width: 77%;
 }
-
 body .news .wrapper .blog .comments .comment .comment-text p {
   font-size: 12px;
   margin-bottom: 0;
 }
-
 body .news .wrapper .blog .comments .comment .comment-text span {
   color: #f44832;
   font-size: 11px;
 }
-
 body .brands {
-  height: 163px;
+  padding: 66px 0 66px 0%;
   width: 100%;
+  text-align: center;
   background-color: #bebebe;
 }
 
+body .brands img {
+  height: 28px;
+  margin-right: 5.2%;
+}
 body .bio {
   background-color: #e45245;
-  padding-bottom: 100px;
+  padding-bottom: 52px;
 }
-
 body .bio h2 {
   margin-top: 41px;
 }
-
 body .bio .profile {
   padding-top: 4px;
   text-align: center;
 }
-
 body .bio .profile span {
   font-size: 30px;
   display: block;
@@ -482,38 +452,102 @@ body .bio .profile span {
   margin-bottom: 21px;
 }
 
-body .bio .profile img {
+body .bio .profile div {
   width: 187px;
   height: 187px;
-  margin-left: -12px;
+  background-color: white;
+  border-radius: 150px;
+  margin: 0 auto;
 }
 
+body .bio .profile img {
+  margin-top: 35px;
+  height: 118px;
+}
 body .bio .profile .social {
   padding-left: 0;
   margin-top: 23px;
   margin-left: 0;
 }
 
+body .bio .profile .social li:hover {
+  background-color: #FBDE06;
+}
 body .bio .profile .social a {
   left: 0 !important;
 }
-
 body .bio .profile .social a i {
   color: #e45245 !important;
 }
-
 body .bio .article {
   color: white;
   padding-top: 10px;
 }
-
 body .bio .article span {
   font-family: BebasBold, serif;
   letter-spacing: -0.025em;
 }
-
 body .bio .article p {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   margin-top: 10px;
+}
+
+body .contact {
+  background-color: #bebebe;
+  background: url("../img/bridge.png") no-repeat;
+  background-position: 0;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  body .contact {
+    background-position: 0 0;
+  }
+}
+
+body .contact h2 {
+  margin-top: 47px;
+}
+
+body .contact .phone {
+  margin: 14px 0 12px 0;
+}
+
+body .contact .phone span {
+  font-size: 39px;
+}
+
+body .contact .email {
+  margin: 29px 0 0 0;
+}
+
+body .contact .email span {
+  border: 3px solid white;
+  font-size: 48px;
+  letter-spacing: 0.08em;
+  padding: 17px 103px 11px 103px;
+}
+
+@media (max-width: 768px) {
+  body .contact .email span {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 540px) {
+  body .contact .email span {
+    font-size: 20px;
+  }
+}
+
+body .contact .address {
+  margin-top: 35px;
+}
+
+body .contact .address span {
+  font-size: 24px;
+  letter-spacing: 0.02em;
 }

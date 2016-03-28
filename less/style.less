@@ -39,6 +39,11 @@
   }
 }
 
+.white-bebas {
+  font-family: BebasBold, serif;
+  color: white;
+}
+
 .green-white {
   background-color: @color-green2;
   color: white;
@@ -417,6 +422,10 @@ body {
         width: 43%;
         padding-top: 6px;
 
+        @media (max-width: @screen-desktop) {
+          width: 90%;
+        }
+
         .tag {
           span {
             font-family: BebasBold, serif;
@@ -489,14 +498,22 @@ body {
   }
 
   .brands {
-    height: 163px; // todo: remove hard coded height. height must depend on the inner content
+
+    padding: 66px 0 66px 0%;
     width: 100%;
+    text-align: center;
     background-color: @color-darkgray;
+
+    img {
+      height: 28px;
+      margin-right: 5.2%;
+
+    }
   }
 
   .bio {
     background-color: @color-bio;
-    padding-bottom: 100px;
+    padding-bottom: 52px;
 
     h2 {
       margin-top: 41px;
@@ -514,16 +531,29 @@ body {
         margin-bottom: 21px;
       }
 
-      img {
+      div {
+
         width: 187px;
         height: 187px;
-        margin-left: -12px;
+        background-color: white;
+        border-radius: 150px;
+        margin: 0 auto;
+      }
+
+      img {
+        margin-top: 35px;
+        height: 118px;
+
       }
 
       .social {
         padding-left: 0;
         margin-top: 23px;
         margin-left: 0;
+
+        li:hover {
+          background-color: #FBDE06;
+        }
 
         a {
           left: 0 !important;
@@ -548,6 +578,58 @@ body {
         font-family: 'PT Sans', sans-serif;
         font-size: 13px;
         margin-top: 10px;
+      }
+    }
+  }
+
+  .contact {
+    background-color: #bebebe;
+    background: url("../img/bridge.png") no-repeat;
+    background-position: 0;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+
+    @media (max-width: @screen-tablet) {
+      background-position: 0 0;
+    }
+
+    h2 {
+      margin-top: 47px;
+    }
+
+    .phone {
+      margin: 14px 0 12px 0;
+      span {
+        font-size: 39px;
+      }
+    }
+
+    .email {
+      margin: 29px 0 0 0;
+      span {
+
+        @media (max-width: @screen-tablet) {
+          font-size: 34px;
+        }
+
+        @media (max-width: @screen-mobile) {
+          font-size: 20px;
+        }
+
+        border: 3px solid white;
+        font-size: 48px;
+        letter-spacing: 0.08em;
+        padding: 17px 103px 11px 103px;
+      }
+    }
+
+    .address {
+      margin-top: 35px;
+
+      span {
+        font-size: 24px;
+        letter-spacing: 0.02em;
       }
     }
   }
