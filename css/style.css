@@ -130,7 +130,7 @@ body header .image div span:first-child {
 }
 @media (max-width: 540px) {
   body header .image div span:first-child {
-    font-size: 30px;
+    font-size: 43px;
     line-height: 0.77;
   }
 }
@@ -429,20 +429,16 @@ body .brands {
 body .brands img {
   height: 28px;
 }
-
 body .brands img:nth-child(1) {
   margin: 0 0 9px 5%;
 }
-
 body .brands img:nth-child(2) {
   margin: 0 0 8px 5%;
 }
-
 body .brands img:nth-child(3) {
   height: 41px;
   margin: 0 3% 0 5%;
 }
-
 body .brands img:nth-child(4) {
   margin: 0 7% 6px 0;
 }
